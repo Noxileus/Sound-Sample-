@@ -1,6 +1,6 @@
 let startContext, samples, sampler, button1, button2, delTimeSlider, feedbackSlider, distSlider;
 
-let dist = new Tone.Distortion(2).toDestination();
+let dist = new Tone.Distortion(0).toDestination();
 let del = new Tone.FeedbackDelay(0, 0).connect(dist);
 del.wet.value = 0.5;
 
